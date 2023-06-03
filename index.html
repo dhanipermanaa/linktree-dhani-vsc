@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dhani Permana web link</title>
+        <style>
+            html, body, * {
+                padding: 0;
+                margin: 0;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .box-terluar {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                max-width: 500px;
+                margin: 0 auto;
+                height: 100vh;
+                background-image: url('gambar1.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;   
+            }
+            .box-saya {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: rgb(255, 255, 255);
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }        
+            .box-saya img {
+                border-radius: 50%;
+                width: 180px;
+                height: 180px;
+                cursor: pointer;
+                margin-bottom: 10px;
+            }
+            .box-link {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                gap: 8px;
+            }
+            .box-link button {
+                background-color: rgb(255, 255, 255);
+                border: none;
+                padding: 8px;
+                font-size: 20px;
+                cursor: pointer;
+                transition: 300ms ease-in-out;
+            }
+            .box-link button:hover {
+                background-color: green;
+                color: white;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="box-terluar">
+        <div class="box-saya">
+            <img src="pp.png">
+            <h1>DHANI PERMANA</h1>
+            <p>WEB DEVELOPER</p>
+        </div>
+        <div class="box-link">
+            <button onclick="dimana('https://instagram.com/dhanipermana__')">Instagram</button>
+            <button onclick="dimana('https://facebook.com/Dhani Pemana AE')">Facebook</button>
+            <button onclick="dimana('https://twiter.com/dhanipermana__')">Twiter</button>
+            <button onclick="dimana('https://tiktok.com/permanaaa')">Tiktok</button>
+            <button onclick="dimana('https://linkedin.com/dhanipermana')">Linkedin</button>
+        </div>
+    </div>
+    <script>
+        function dimana(kemana){
+        window.open(kemana)
+        }
+    </script>
+</body>
+
+</html>
